@@ -1,0 +1,70 @@
+# Confidential Transactions/Bulletproofs: The Elephant In The Room
+
+In my previous article I deducted why and how Confidential Transactions/
+Bulletproofs are revolutionary and how they will change Bitcoin for good.
+However I conveniently ignored the elephant in the room, thus in this article I
+must correct myself, because as it is today, this technology will not get into
+Bitcoin.
+
+CT needs a soft fork and we will not have consensus for that.<br> There is a
+tricky technical issue with Bulletproofs. From the
+[whitepaper](https://eprint.iacr.org/2017/1066.pdf):
+
+> Bulletproofs, like the range proofs currently used in confidential transactions,
+> are computationally binding. An adversary that could break the discrete
+logarithm assumption could generate acceptable range proofs for a value outside
+the correct range…
+
+> …An adversary that can break the binding property of the commitment scheme or
+> the soundness of the proof system can generate coins out of thin air and thus
+create uncontrolled but undetectable inflation rendering the currency useless…
+
+> …While the discrete logarithm assumption is believed to hold for classical
+> computers, it does not hold against a quantum adversary.
+
+**Meaning: quantum computers could break Bulletproofs by creating silent
+inflation.** This is fine for Monero or Mimblewimble, but this will not fly with
+Bitcoin developers.
+
+So will we see CT/Bulletproofs in Bitcoin, if so, when? This may sound
+contradictory to this whole post, but I would speculate from 3 to 10 years we
+will get some kind of sound amount hiding, call it Confidential Transactions,
+Bulletproofs, Mimblezeroringshuffleproofs or something else . *I would be
+surprised if this is the end of the road. Luckily, progress in technology
+doesn’t tend to just stop.*
+
+![](https://cdn-images-1.medium.com/max/800/0*Qk_xWE4PCbuat89L.)
+<span class="figcaption_hack">[186n7me3QKajQZJnUsVsezVhVrSwyFCCZ](https://www.smartbit.com.au/address/186n7me3QKajQZJnUsVsezVhVrSwyFCCZ)*
+(*[Accountability](https://github.com/nopara73/HiddenWallet/blob/master/HiddenWallet.Documentation/DonationsSpentOn.md)*)*</span>
+
+* [Bitcoin](https://medium.com/tag/bitcoin?source=post)
+
+By clapping more or less, you can signal to us which stories really stand out.
+
+### [nopara73](https://medium.com/@nopara73)
+
+Chief Redditor of TumbleBit. Creator of HiddenWallet. I love pizza:
+186n7me3QKajQZJnUsVsezVhVrSwyFCCZ
+
+Curious why you say it would be fine for Monero or MimbleWimble (Grin)? My
+understanding of MW was that pretty much the *only* thing the protocol reveals
+is that there were no new coins created outside of whatever inflation mechanism
+the protocol dictates. Are you saying this feature can be broken with quantum
+computing?
+
+You may be right, because I am not that much into it, but I doubt and here’s
+why: MW was created regardless CT, which ensures the inflation protection.
+However MW, or later Grin added CT so it can provide additional privacy. Then
+Bulletproofs were invented and to my knowledge Grin uses Bulletproofs as is. MW
+may rely on super strong crypto…
+
+Ditto quantum computers being a risk for SHA256 but it lives in bitcoin. I agree
+that any fork is next to impossible for consensus reasons but this reason alone
+is likely not bulletproof’s nail in coffin.
+
+I actually started this essay by talking about social issues, and came to the
+conclusion that we can only push this change through if we have >80% developer
+and researcher consensus. Then I deleted that first part and just left the less
+speculative part of it here.
+
+[*source*](https://medium.com/@nopara73/confidential-transactions-bulletproofs-the-elephant-in-the-room-cfdb37ce509)
