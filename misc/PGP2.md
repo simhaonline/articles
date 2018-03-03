@@ -145,7 +145,7 @@ Remember that the image is stored within your public key.  If you use a
 very large picture, your key will become very large as well!
 Keeping the image close to 240x288 is a good size to use.
 
-Enter JPEG filename for photo ID: /home/biblo/me.gp
+Enter JPEG filename for photo ID: /home/biblo/me.jpg
 
 Is this photo correct (y/N/q)? y
 
