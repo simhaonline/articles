@@ -390,7 +390,7 @@ Should the worst happen and your laptop with your special keypair gets lost or s
     [ultimate] (1). Bilbo Baggins <bilbo@shire.org>
     [ultimate] (2)  [jpeg image of size 5324]
 
-    gpg> 
+    gpg> key1 
 
 
 
@@ -401,7 +401,7 @@ Should the worst happen and your laptop with your special keypair gets lost or s
     [ultimate] (1). Bilbo Baggins <bilbo@shire.org>
     [ultimate] (2)  [jpeg image of size 5324]
     
-    gpg> 
+    gpg> key2
 
 
     pub  4096R/488BA441  created: 2013-03-13  expires: never       usage: SC  
@@ -411,11 +411,9 @@ Should the worst happen and your laptop with your special keypair gets lost or s
     [ultimate] (1). Bilbo Baggins <bilbo@shire.org>
     [ultimate] (2)  [jpeg image of size 5324]
 
-    gpg> 
-    
+    gpg> revkey 
 
-
-    Do you really want to revoke the selected subkeys? (y/N) 
+    Do you really want to revoke the selected subkeys? (y/N) y 
 
     Please select the reason for the revocation:
         0 = No reason specified
@@ -424,23 +422,25 @@ Should the worst happen and your laptop with your special keypair gets lost or s
         3 = Key is no longer used
         Q = Cancel
     
-    Your decision? 
+    Your decision? 1
     Enter an optional description; end it with an empty line:
     > 
     Reason for revocation: Key has been compromised
     (No description given)
     
-    Is this okay? (y/N) 
+    Is this okay? (y/N) y
     
     You need a passphrase to unlock the secret key for
     user: "Bilbo Baggins <bilbo@shire.org>"
     4096-bit RSA key, ID 488BA441, created 2013-03-13
-
+    
+    <type your passphrase>
 
     You need a passphrase to unlock the secret key for
     user: "Bilbo Baggins <bilbo@shire.org>"
     4096-bit RSA key, ID 488BA441, created 2013-03-13
-
+    
+    <type your passphrase>
 
     pub  4096R/488BA441  created: 2013-03-13  expires: never       usage: SC  
                      trust: ultimate      validity: ultimate
@@ -451,7 +451,7 @@ Should the worst happen and your laptop with your special keypair gets lost or s
     [ultimate] (1). Bilbo Baggins <bilbo@shire.org>
     [ultimate] (2)  [jpeg image of size 5324]
     
-    gpg> 
+    gpg> save 
     
     ```
 
