@@ -1,6 +1,4 @@
 # Revisiting PGP -  Creating the perfect GPG keypair
- 
-## Intro 
 
 Note
 -------
