@@ -187,20 +187,21 @@ sub  4096R/69B0EA85  created: 2013-03-13  expires: never       usage: E
 [ultimate] (1). Bilbo Baggins <bilbo@shire.org>
 [ultimate] (2)  [jpeg image of size 5324]
 
-gpg> 
+gpg> setpref SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 ZLIB BZIP2 ZIP Uncompressed
 
 Set preference list to:
      Cypher: AES256, AES192, AES, CAST5, 3DES
      Digest: SHA512, SHA384, SHA256, SHA224, SHA1
      Compression: ZLIB, BZIP2, ZIP, Uncompressed
      Features: MDC, Keyserver no-modify
-Really update the preferences? (y/N) 
+Really update the preferences? (y/N) y
 
 
 You need a passphrase to unlock the secret key for
 user: "Bilbo Baggins <bilbo@shire.org>"
 4096-bit RSA key, ID 488BA441, created 2013-03-13
 
+<type your passphrase>
 
 pub  4096R/488BA441  created: 2013-03-13  expires: never       usage: SC  
                      trust: ultimate      validity: ultimate
@@ -208,7 +209,7 @@ sub  4096R/69B0EA85  created: 2013-03-13  expires: never       usage: E
 [ultimate] (1). Bilbo Baggins <bilbo@shire.org>
 [ultimate] (2)  [jpeg image of size 5324]
 
-gpg> 
+gpg> save
 
 ```
 
