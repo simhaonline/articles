@@ -1,0 +1,58 @@
+$ FILE=/some/path/to/file.txt
+
+###################################
+### Remove matching suffix pattern
+###################################
+
+$ echo ${FILE%.*}          # remove ext 
+/some/path/to/file
+
+$ FILE=/some/path/to/file.txt.jpg.gpg    # note various file exts
+$ echo ${FILE%%.*}                       # remove all exts
+/some/path/to/file
+
+$ FILE=/some/path/to/file.txt    # back to inital value
+$ echo ${FILE%/*}                # dirname (same as "dirname $FILE")
+/some/path/to
+
+$ echo "[ ${FILE%%/*} ]"    # enclosing value with [ ] to clarify
+[  ]                        # no value at all
+
+##################################
+### Remove matching prefix pattern
+##################################
+
+$ echo ${FILE#/some}          # remove root dir only (nice to join paths)
+/path/to/file.txt
+
+$ echo /root/dir/${FILE#/some/path/}  # removing prefix path and join to arbitrary prefix dir
+/root/dir/to/file.txt
+
+$ echo ${FILE##*/}            # remove all dirs (same as "basename $FILE")
+file.txt
+
+##################################
+### Check for a given extension
+##################################
+
+$ if [ "${FILE/*.txt/1}" == '1' ]; then
+> echo match
+> else
+> echo nope
+> fi
+match
+
+$ if [ "${FILE/*.conf/1}" == '1' ]; then
+> echo match
+> else
+> echo nope
+> fi
+nope
+
+# And here is a nice little function:
+
+$ function ext_is() { [ "${1/*.$2/1}" == '1' ]; }
+$ ext_is $FILE txt && echo match || echo nope
+match
+$ ext_is $FILE conf && echo match || echo nope
+nope
