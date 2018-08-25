@@ -458,13 +458,19 @@ Should the worst happen and your laptop with your special keypair gets lost or s
 
 ## Further reading
 
+  * [PGP Manual](https://www.gnupg.org/)
+  
   * [The GNU Privacy Handbook](http://www.gnupg.org/gph/en/manual.html), a very detailed explanation of how public-key cryptography works and how to use GPG.
+  
+  * [PGP Tutorial](https://futureboy.us/pgp.html)
+  
+  * [PGP Tutorial with examples]( http://www.spywarewarrior.com/uiuc/gpg/gpg-com-4.htm)
   
   * [Subkeys](http://wiki.debian.org/subkeys) at the Debian Wiki, an explanation of why using subkeys is a good idea and a step-by-step guide to setting them up.
   
   * [Creating GPG Keys](http://fedoraproject.org/wiki/Creating_GPG_Keys) at the Fedora project, a step-by-step guide to creating a new GPG keypair.
     
   * [GPG How-to](https://help.ubuntu.com/community/GnuPrivacyGuardHowto) at the Ubuntu Community Help Wiki.
-
+  
 
 *source* https://alexcabal.com/creating-the-perfect-gpg-keypair/
